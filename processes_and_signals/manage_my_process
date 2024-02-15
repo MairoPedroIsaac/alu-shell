@@ -1,4 +1,7 @@
 #!/usr/bin/env bash
-# a Bash script that stops 4-to_infinity_and_beyond process without the use of kill or killall comd
+# Daemon process
+while true; do
+	echo I am alive! >> /tmp/my_process
+	sleep 2
+done
 
-pkill -f 4-to_infinity_and_beyond 
